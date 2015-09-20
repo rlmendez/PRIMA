@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PRIMA</string>
+    <string name="prima">Proceso de Requisiciòn e Insumo de Materiales y Afines</string>
+    <string name="ingreso">INGRESAR</string>
+
+    <string name="inicio">Bienvenido</string>
+
+    <string name="solicitud">Por favor escoger:</string>
+
+    <string name="indicacion">Por favor escoger la accion a realizar:</string>
+
+    <string-array name="Obras">
+        <item>Vintage</item>
+        <item>Universidad Distrital Electricas</item>
+        <item>Universidad Distrital Voz y Datos</item>
+        <item>Hogar Premium</item>
+        <item>Hospital Tintal</item>
+    </string-array>
+
+</resources>

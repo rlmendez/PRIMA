@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_horizontal"
+    android:orientation="vertical" android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" tools:context=".login_prima"
+    android:id="@+id/fondo"
+    android:background="@drawable/torre_electrica"
+    android:baselineAligned="false">
+
+    <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" android:visibility="gone" />
+
+    <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:fillViewport="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="1"
+            android:rowCount="7"
+            android:id="@+id/inicio"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:id="@+id/text_prima"
+                android:layout_gravity="center"
+                android:textColor="#ff0a16"
+                android:textAlignment="gravity"
+                android:typeface="serif"
+                android:textSize="30dp"
+                android:paddingTop="15dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/prima"
+                android:id="@+id/text_sig_prima"
+                android:layout_gravity="center"
+                android:textColor="#ff141c"
+                android:textAlignment="gravity"
+                android:typeface="monospace"
+                android:textSize="15dp"
+                android:paddingTop="20dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left"
+                android:text="Ingrese su usuario:"
+                android:id="@+id/text_indicacion"
+                android:layout_gravity="center"
+                android:textColor="#ff141c"
+                android:textAlignment="gravity"
+                android:typeface="monospace"
+                android:textSize="15dp"
+                android:paddingTop="5dp" />
+
+            <EditText
+                android:layout_width="289dp"
+                android:layout_height="20dp"
+                android:id="@+id/usuario"
+                android:background="#ffffff"
+                android:backgroundTint="#000000"
+                android:clickable="true"
+                android:editable="true"
+                android:textSize="15dp"
+                android:maxLength="10"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left"
+                android:text="Contraseña:"
+                android:id="@+id/text_contra"
+                android:layout_gravity="center"
+                android:textColor="#ff141c"
+                android:textAlignment="gravity"
+                android:typeface="monospace"
+                android:textSize="15dp"
+                android:paddingTop="5dp" />
+
+            <EditText
+                android:layout_width="288dp"
+                android:layout_height="20dp"
+                android:id="@+id/contraseña"
+                android:background="#ffffff"
+                android:backgroundTint="#000000"
+                android:clickable="true"
+                android:editable="true"
+                android:textSize="15dp"
+                android:maxLength="10"
+                android:padding="4dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="@string/ingreso"
+                android:id="@+id/ingreso_sistema"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ff0f15"
+                android:textSize="20dp"
+                android:typeface="sans"
+                android:longClickable="false"
+                android:clickable="true"
+                android:background="#ffffff"
+                android:padding="5dp"
+                android:onClick="login" />
+
+
+
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>
