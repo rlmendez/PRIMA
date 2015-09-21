@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_horizontal"
+    android:orientation="vertical" android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" tools:context=".login_prima"
+    android:id="@+id/fondo"
+    android:background="@drawable/torre_electrica"
+    android:baselineAligned="false">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="10"
+        android:rowCount="16"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Pedido Express"
+            android:id="@+id/textView_bienv"
+            android:textColor="#ff0a16"
+            android:textAlignment="gravity"
+            android:typeface="serif"
+            android:textSize="15dp"
+            android:paddingTop="1dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_columnWeight="5"
+            android:layout_margin="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Consecutivo:"
+            android:id="@+id/textView_Conse"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:textColor="#ff422f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Obra:"
+            android:id="@+id/textView_obra"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:textColor="#ff422f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Fecha:"
+            android:id="@+id/textView_fecha"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:textColor="#ff422f" />
+
+        <TextView
+            android:id="@+id/fecha01"
+            android:layout_width="wrap_content"
+            android:layout_row="5"
+            android:layout_column="3"/>
+
+    </GridLayout>
+</LinearLayout>

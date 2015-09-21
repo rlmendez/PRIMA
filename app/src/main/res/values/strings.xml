@@ -16,5 +16,9 @@
         <item>Hogar Premium</item>
         <item>Hospital Tintal</item>
     </string-array>
+    <string name="title_activity_pedido_express">pedido_express</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
