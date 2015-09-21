@@ -20,6 +20,10 @@
             android:name=".menu"
             android:label="PRIMA" >
         </activity>
+        <activity
+            android:name=".pedido_express"
+            android:label="PRIMA" >
+        </activity>
     </application>
 
 </manifest>

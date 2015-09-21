@@ -44,4 +44,12 @@ public class menu extends AppCompatActivity {
         startActivity(picIntent);
 
     }//void
+
+    public void pedido(View p){
+
+        Intent picIntent = new Intent(this, pedido_express.class);
+
+        startActivity(picIntent);
+
+    }//void
 }

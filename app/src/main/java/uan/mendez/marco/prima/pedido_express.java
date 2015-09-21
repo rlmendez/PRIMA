@@ -4,18 +4,28 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
+import java.text.DateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 public class pedido_express extends AppCompatActivity {
 
-    final TextView fecha_actual = (TextView) findViewById(R.id.fecha01);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pedido_express);
+
+        //Definimos el objeto texto a partir de el elemento con id caja_de_texto
+        TextView texto = (TextView)findViewById(R.id.fecha);
+
+        Date fecha = new java.util.Date(); //manejador de fechas
+
+        //Cambiamos el texto
+        texto.setText("Fecha: "+ fecha.getDate()+"-"+fecha.getMonth()+"-"+fecha.getYear());
     }
 
     @Override
@@ -40,11 +50,21 @@ public class pedido_express extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    final Calendar c = Calendar.getInstance();
-    int anio = c.get(Calendar.YEAR); //obtenemos el año
-    int mes = c.get(Calendar.MONTH); //obtenemos el mes
+    /*public void fecha(View f){
 
-    mes = mes + 1;
-    int dia = c.get(Calendar.DAY_OF_MONTH); // obtemos el día.
-    fecha_actual.setText(dia+” : “+mes+” : “+anio); //cambiamos el texto que tiene el
+        final TextView fecha_actual = (TextView) findViewById(R.id.fecha);
+
+        final Calendar c = Calendar.getInstance();
+        int anio = c.get(Calendar.YEAR); //obtenemos el año
+        int mes = c.get(Calendar.MONTH); //obtenemos el mes
+
+        mes = mes + 1;
+        int dia = c.get(Calendar.DAY_OF_MONTH);
+        fecha_actual.setText(dia);
+
+
+    }//fecha*/
+
+
+
 }

@@ -78,7 +78,8 @@
             android:layout_columnWeight="4"
             android:layout_row="6"
             android:gravity="center"
-            android:clickable="true" />
+            android:clickable="true"
+            android:onClick="pedido" />
 
         <Button
             android:layout_width="wrap_content"
