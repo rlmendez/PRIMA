@@ -1,9 +1,11 @@
 package uan.mendez.marco.prima;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class menu extends AppCompatActivity {
 
@@ -34,4 +36,12 @@ public class menu extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void regreso(View r){
+
+        Intent picIntent = new Intent(this, login.class);
+
+        startActivity(picIntent);
+
+    }//void
 }

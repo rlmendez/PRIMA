@@ -18,7 +18,7 @@
         </activity>
         <activity
             android:name=".menu"
-            android:label="@string/title_activity_menu" >
+            android:label="PRIMA" >
         </activity>
     </application>
 
