@@ -16,9 +16,18 @@
         <item>Hogar Premium</item>
         <item>Hospital Tintal</item>
     </string-array>
+
     <string name="title_activity_pedido_express">pedido_express</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="Materiales">
+        <item>Tuberìa PVC 1"</item>
+        <item>Tuberìa PVC 1/2"</item>
+        <item>Alambre desnudo #12</item>
+        <item>Cable desnudo # 10</item>
+        <item>Caja Octagonal</item>
+    </string-array>
 
 </resources>

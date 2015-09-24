@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
         android:columnCount="10"
-        android:rowCount="16"
+        android:rowCount="18"
         android:layout_margin="1dp">
 
         <TextView
@@ -64,6 +64,26 @@
             android:layout_column="1"
             android:hint="Fecha"
             android:textColor="#ff533c" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Fecha Llegada:"
+            android:id="@+id/text_fecha"
+            android:layout_row="7"
+            android:layout_column="1"
+            android:textColor="#ff3e25" />
+
+        <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calendarView"
+            android:layout_row="7"
+            android:layout_column="2"
+            android:clickable="true"
+            android:maxDate="Diciembre 31 de 2015"
+            android:padding="1dp" />
 
 
     </GridLayout>

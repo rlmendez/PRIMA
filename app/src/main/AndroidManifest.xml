@@ -18,11 +18,13 @@
         </activity>
         <activity
             android:name=".menu"
-            android:label="PRIMA" >
+            android:label="PRIMA"
+            android:configChanges="orientation|screenSize">
         </activity>
         <activity
             android:name=".pedido_express"
-            android:label="PRIMA" >
+            android:label="PRIMA"
+            android:configChanges="orientation|screenSize">
         </activity>
     </application>
 
