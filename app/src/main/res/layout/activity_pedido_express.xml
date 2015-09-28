@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
         android:columnCount="10"
-        android:rowCount="18"
+        android:rowCount="24"
         android:layout_margin="1dp">
 
         <TextView
@@ -32,69 +32,72 @@
             android:layout_row="0"
             android:layout_column="1"
             android:layout_gravity="top|center_horizontal"
-            android:layout_columnWeight="5"
             android:layout_margin="1dp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="105dp"
+            android:layout_height="30dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Consecutivo:"
             android:id="@+id/textView_Conse"
             android:layout_row="3"
-            android:layout_column="1"
-            android:textColor="#ff422f" />
+            android:layout_column="0"
+            android:textColor="#ff422f"
+            android:textSize="15dp" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/consecutivo"
             android:layout_row="3"
-            android:layout_column="2"
+            android:layout_column="1"
             android:hint="0000"
             android:focusableInTouchMode="true"
-            android:layout_columnSpan="3"
-            android:layout_columnWeight="3"
-            android:textColor="#ff422c" />
+            android:textColor="#ff422c"
+            android:textSize="15dp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Obra:"
             android:id="@+id/textView_obra"
             android:layout_row="4"
-            android:layout_column="1"
-            android:textColor="#ff422f" />
+            android:layout_column="0"
+            android:textColor="#ff422f"
+            android:textSize="15dp" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/Obra"
             android:layout_row="4"
-            android:layout_column="2"
+            android:layout_column="1"
             android:textColor="#ff371c"
-            android:hint="Proyecto seleccionado" />
+            android:hint="Proyecto seleccionado"
+            android:textSize="15dp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/fecha"
             android:layout_row="6"
-            android:layout_column="1"
+            android:layout_column="0"
             android:hint="Fecha"
-            android:textColor="#ff533c" />
+            android:textColor="#ff533c"
+            android:textSize="15dp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Fecha Llegada:"
             android:id="@+id/text_fecha"
             android:layout_row="7"
-            android:layout_column="1"
-            android:textColor="#ff3e25" />
+            android:layout_column="0"
+            android:textColor="#ff3e25"
+            android:textSize="15dp" />
 
         <CalendarView
             android:layout_width="wrap_content"
@@ -113,18 +116,35 @@
             android:text="Material"
             android:id="@+id/text_Material"
             android:layout_row="9"
-            android:layout_column="1"
-            android:textColor="#ff3c1f"
-            android:layout_columnWeight="3" />
+            android:layout_column="0"
+            android:textColor="#ff3c1f" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="UN"
+            android:id="@+id/text_uni"
+            android:layout_row="9"
+            android:layout_column="1"
+            android:textColor="#ff2d1d" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Cant."
             android:id="@+id/textView"
             android:layout_row="9"
-            android:layout_column="2" />
+            android:layout_column="3"
+            android:textColor="#ff471f" />
+
+        <Spinner
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:id="@+id/spinner"
+            android:layout_row="10"
+            android:layout_column="0" />
 
 
     </GridLayout>
