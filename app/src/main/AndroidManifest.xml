@@ -23,8 +23,7 @@
         </activity>
         <activity
             android:name=".pedido_express"
-            android:label="PRIMA"
-            android:configChanges="orientation|screenSize">
+            android:label="PRIMA">
         </activity>
     </application>
 

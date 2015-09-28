@@ -50,21 +50,15 @@ public class pedido_express extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /*public void fecha(View f){
+    public void nombre_obra(View v){
 
-        final TextView fecha_actual = (TextView) findViewById(R.id.fecha);
+        String proyecto = getIntent().getStringExtra("Obra");
 
-        final Calendar c = Calendar.getInstance();
-        int anio = c.get(Calendar.YEAR); //obtenemos el año
-        int mes = c.get(Calendar.MONTH); //obtenemos el mes
+        TextView n = (TextView)findViewById(R.id.Obra_p);
 
-        mes = mes + 1;
-        int dia = c.get(Calendar.DAY_OF_MONTH);
-        fecha_actual.setText(dia);
+        n.setText(String.valueOf(proyecto));
 
-
-    }//fecha*/
-
+    }
 
 
 }

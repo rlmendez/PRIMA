@@ -1,11 +1,16 @@
 package uan.mendez.marco.prima;
 
 import android.content.Intent;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Spinner;
+import android.widget.TextView;
+
+import java.io.Serializable;
 
 public class menu extends AppCompatActivity {
 
@@ -49,7 +54,13 @@ public class menu extends AppCompatActivity {
 
         Intent picIntent = new Intent(this, pedido_express.class);
 
+        Spinner proyecto = (Spinner)findViewById(R.id.Obra);
+        String o = proyecto.getSelectedItem().toString();
+
+        picIntent.putExtra("Obra",o.toString());
+
         startActivity(picIntent);
 
     }//void
+
 }

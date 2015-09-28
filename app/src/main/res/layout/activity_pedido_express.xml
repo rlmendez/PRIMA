@@ -14,9 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
-        android:columnCount="3"
+        android:columnCount="4"
         android:rowCount="24"
-        android:id="@+id/">
+        android:id="@+id/pedido">
 
         <TextView
             android:layout_width="110dp"
@@ -34,7 +34,7 @@
 
         <TextView
             android:layout_width="90dp"
-            android:layout_height="30dp"
+            android:layout_height="20dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Consecutivo:"
             android:id="@+id/textView_Conse"
@@ -56,7 +56,7 @@
 
         <TextView
             android:layout_width="60dp"
-            android:layout_height="30dp"
+            android:layout_height="20dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Obra:"
             android:id="@+id/textView_obra"
@@ -66,30 +66,20 @@
             android:textSize="15dp" />
 
         <EditText
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/Obra"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/Obra_p"
             android:layout_row="4"
             android:layout_column="1"
             android:textColor="#ff371c"
             android:hint="Proyecto seleccionado"
             android:textSize="15sp"
-            android:layout_columnSpan="2" />
+            android:layout_columnSpan="2"
+            android:onClick="nombre_obra" />
 
         <TextView
             android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/fecha"
-            android:layout_row="6"
-            android:layout_column="0"
-            android:hint="Fecha"
-            android:textColor="#ff533c"
-            android:textSize="15dp" />
-
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="50dp"
+            android:layout_height="20dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Fecha Llegada:"
             android:id="@+id/text_fecha"
@@ -109,7 +99,7 @@
 
         <TextView
             android:layout_width="80dp"
-            android:layout_height="wrap_content"
+            android:layout_height="20dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Material"
             android:id="@+id/text_Material"
@@ -120,7 +110,7 @@
 
         <TextView
             android:layout_width="30dp"
-            android:layout_height="wrap_content"
+            android:layout_height="20dp"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="UN"
             android:id="@+id/text_uni"
@@ -131,7 +121,7 @@
 
         <TextView
             android:layout_width="60dp"
-            android:layout_height="25dp"
+            android:layout_height="20dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Cant."
             android:id="@+id/textView"
@@ -141,12 +131,33 @@
             android:textSize="15dp" />
 
         <Spinner
-            android:layout_width="80dp"
-            android:layout_height="50dp"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
             android:id="@+id/spinner"
             android:layout_row="10"
             android:layout_column="0"
+            android:entries="@array/Materiales"
             android:spinnerMode="dialog" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/fecha"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:hint="Fecha"
+            android:textColor="#ff533c"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_row="11"
+            android:layout_column="1" />
 
 
     </GridLayout>
