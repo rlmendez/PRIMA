@@ -14,25 +14,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
-        android:columnCount="10"
+        android:columnCount="3"
         android:rowCount="24"
-        android:layout_margin="1dp">
+        android:id="@+id/">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Pedido Express"
             android:id="@+id/textView_bienv"
             android:textColor="#ff0a16"
-            android:textAlignment="gravity"
+            android:textAlignment="center"
             android:typeface="serif"
             android:textSize="15dp"
-            android:paddingTop="1dp"
             android:layout_row="0"
             android:layout_column="1"
             android:layout_gravity="top|center_horizontal"
-            android:layout_margin="1dp" />
+            android:layout_columnSpan="2" />
 
         <TextView
             android:layout_width="105dp"
@@ -57,7 +56,7 @@
             android:textSize="15dp" />
 
         <TextView
-            android:layout_width="80dp"
+            android:layout_width="60dp"
             android:layout_height="30dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Obra:"
@@ -68,14 +67,15 @@
             android:textSize="15dp" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:id="@+id/Obra"
             android:layout_row="4"
             android:layout_column="1"
             android:textColor="#ff371c"
             android:hint="Proyecto seleccionado"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:layout_columnSpan="2" />
 
         <TextView
             android:layout_width="150dp"
@@ -89,8 +89,8 @@
             android:textSize="15dp" />
 
         <TextView
-            android:layout_width="150dp"
-            android:layout_height="30dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Fecha Llegada:"
             android:id="@+id/text_fecha"
@@ -110,14 +110,15 @@
             android:padding="1dp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Material"
             android:id="@+id/text_Material"
             android:layout_row="9"
             android:layout_column="0"
-            android:textColor="#ff3c1f" />
+            android:textColor="#ff3c1f"
+            android:textSize="15dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -127,7 +128,8 @@
             android:id="@+id/text_uni"
             android:layout_row="9"
             android:layout_column="1"
-            android:textColor="#ff2d1d" />
+            android:textColor="#ff2d1d"
+            android:textSize="15dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -136,15 +138,17 @@
             android:text="Cant."
             android:id="@+id/textView"
             android:layout_row="9"
-            android:layout_column="3"
-            android:textColor="#ff471f" />
+            android:layout_column="2"
+            android:textColor="#ff471f"
+            android:textSize="15dp" />
 
         <Spinner
             android:layout_width="120dp"
             android:layout_height="50dp"
             android:id="@+id/spinner"
             android:layout_row="10"
-            android:layout_column="0" />
+            android:layout_column="0"
+            android:spinnerMode="dialog" />
 
 
     </GridLayout>
