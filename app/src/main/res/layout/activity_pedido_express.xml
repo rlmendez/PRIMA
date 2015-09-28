@@ -30,11 +30,10 @@
             android:textSize="15dp"
             android:layout_row="0"
             android:layout_column="1"
-            android:layout_gravity="top|center_horizontal"
-            android:layout_columnSpan="2" />
+            android:layout_gravity="top|center_horizontal" />
 
         <TextView
-            android:layout_width="105dp"
+            android:layout_width="90dp"
             android:layout_height="30dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Consecutivo:"
@@ -67,18 +66,18 @@
             android:textSize="15dp" />
 
         <EditText
-            android:layout_width="60dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:id="@+id/Obra"
             android:layout_row="4"
             android:layout_column="1"
             android:textColor="#ff371c"
             android:hint="Proyecto seleccionado"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:layout_columnSpan="2" />
 
         <TextView
-            android:layout_width="150dp"
+            android:layout_width="80dp"
             android:layout_height="30dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/fecha"
@@ -89,7 +88,7 @@
             android:textSize="15dp" />
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="80dp"
             android:layout_height="50dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Fecha Llegada:"
@@ -104,10 +103,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/calendarView"
             android:layout_row="7"
-            android:layout_column="2"
+            android:layout_column="1"
             android:clickable="true"
-            android:maxDate="Diciembre 31 de 2015"
-            android:padding="1dp" />
+            android:maxDate="Diciembre 31 de 2015" />
 
         <TextView
             android:layout_width="80dp"
@@ -121,7 +119,7 @@
             android:textSize="15dp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="UN"
@@ -132,8 +130,8 @@
             android:textSize="15dp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Cant."
             android:id="@+id/textView"
@@ -143,7 +141,7 @@
             android:textSize="15dp" />
 
         <Spinner
-            android:layout_width="120dp"
+            android:layout_width="80dp"
             android:layout_height="50dp"
             android:id="@+id/spinner"
             android:layout_row="10"
