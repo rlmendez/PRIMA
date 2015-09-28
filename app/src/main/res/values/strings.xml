@@ -28,5 +28,8 @@
         <item>Cable desnudo # 10</item>
         <item>Caja Octagonal</item>
     </string-array>
+    <string name="title_activity_estado_solicitudes">estado_solicitudes</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>
