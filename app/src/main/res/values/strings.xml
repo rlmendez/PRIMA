@@ -31,5 +31,6 @@
     <string name="title_activity_estado_solicitudes">estado_solicitudes</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_observaciones">observaciones</string>
 
 </resources>

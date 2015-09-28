@@ -29,6 +29,10 @@
             android:name=".estado_solicitudes"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name=".observaciones"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

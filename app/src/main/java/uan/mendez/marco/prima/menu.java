@@ -63,4 +63,20 @@ public class menu extends AppCompatActivity {
 
     }//void
 
+    public void estado(View l){
+
+        Intent e = new Intent(this, estado_solicitudes.class);
+
+        startActivity(e);
+
+    }//void
+
+    public void observacion(View l){
+
+        Intent e = new Intent(this, observaciones.class);
+
+        startActivity(e);
+
+    }//void
+
 }
