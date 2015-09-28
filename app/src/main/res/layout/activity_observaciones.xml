@@ -14,8 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
-        android:columnCount="5"
-        android:rowCount="20"
+        android:columnCount="3"
+        android:rowCount="21"
         android:layout_margin="1dp"
         android:orientation="horizontal">
 
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Observaciones"
-            android:id="@+id/textView_observ"
+            android:id="@+id/textView_obser"
             android:textColor="#ff0a16"
             android:textAlignment="gravity"
             android:typeface="serif"
@@ -60,39 +60,43 @@
             android:layout_row="4"
             android:layout_column="1" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Por favor ingresar la informaciòn:"
-            android:id="@+id/textView_obser_sol"
-            android:layout_row="5"
-            android:layout_column="1"
-            android:textColor="#ff2417"
-            android:textIsSelectable="true" />
-
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
             android:ems="10"
-            android:id="@+id/observacion"
-            android:layout_row="9"
+            android:id="@+id/observacion_text"
+            android:layout_row="8"
             android:layout_column="1"
-            android:layout_rowSpan="6"
-            android:hint="Ingrese su observaciòn"
+            android:layout_columnSpan="2"
+            android:layout_rowSpan="5"
+            android:hint="Ingrese por favor la observaciòn"
             android:editable="true"
-            android:clickable="true" />
+            android:maxLines="8"
+            android:textSize="10dp"
+            android:textColor="#ff4823" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:id="@+id/envio_obs"
+            android:layout_row="19"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:padding="1dp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Volver"
             android:id="@+id/volver"
-            android:layout_row="23"
+            android:layout_row="20"
             android:layout_column="1"
             android:layout_gravity="center"
             android:clickable="true"
-            android:onClick="volver" />
+            android:onClick="r"
+            android:layout_margin="1dp" />
 
     </GridLayout>
 </LinearLayout>

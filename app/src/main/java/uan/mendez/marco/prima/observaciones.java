@@ -1,9 +1,11 @@
 package uan.mendez.marco.prima;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class observaciones extends AppCompatActivity {
 
@@ -34,4 +36,12 @@ public class observaciones extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void r(View r){
+
+        Intent reg = new Intent(this, menu.class);
+
+        startActivity(reg);
+
+    }//void
 }

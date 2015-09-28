@@ -73,9 +73,9 @@ public class menu extends AppCompatActivity {
 
     public void observacion(View l){
 
-        Intent e = new Intent(this, observaciones.class);
+        Intent i = new Intent(this, observaciones.class);
 
-        startActivity(e);
+        startActivity(i);
 
     }//void
 
