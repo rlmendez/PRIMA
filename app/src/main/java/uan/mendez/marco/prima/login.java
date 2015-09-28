@@ -3,9 +3,15 @@ package uan.mendez.marco.prima;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class login extends AppCompatActivity {
 
@@ -39,9 +45,32 @@ public class login extends AppCompatActivity {
 
     public void login(View l){
 
-        Intent picIntent = new Intent(this, menu.class);
+        EditText usuario = (EditText)findViewById(R.id.usuario);
+        EditText contra = (EditText)findViewById(R.id.contraseña);
 
-        startActivity(picIntent);
+        String usu = usuario.getText().toString();
+        String cont = contra.getText().toString();
+
+        if (usu.equals("marmendez") && cont.equals("marzo13")){
+                Intent picIntent = new Intent(this, menu.class);
+                startActivity(picIntent);
+            }//if1
+            else {
+                Intent error = new Intent(this, login.class);
+                startActivity(error);
+                Toast toast = new Toast(getApplicationContext());
+
+                LayoutInflater inflater = getLayoutInflater();
+                View layout = inflater.inflate(R.layout.toast,
+                        (ViewGroup) findViewById(R.id.lytLayout));
+
+                TextView txtMsg = (TextView)layout.findViewById(R.id.txtMensaje);
+                txtMsg.setText("Usuario/Contraseña incorrecto(s)");
+
+                toast.setDuration(Toast.LENGTH_SHORT);
+                toast.setView(layout);
+                toast.show();
+            }//else
 
     }//void
 }
