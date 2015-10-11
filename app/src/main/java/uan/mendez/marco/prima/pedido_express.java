@@ -60,7 +60,6 @@ public class pedido_express extends AppCompatActivity {
         n.setText(String.valueOf(proyecto));
         //Log.e("mensaje","Proyecto: " + proyecto);
 
-
     }
 
 

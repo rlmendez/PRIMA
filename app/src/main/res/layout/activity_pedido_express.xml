@@ -68,13 +68,13 @@
 
         <EditText
             android:layout_width="200dp"
-            android:layout_height="20dp"
+            android:layout_height="25dp"
             android:id="@+id/Obra_p"
             android:layout_row="3"
             android:layout_column="1"
             android:textColor="#ff371c"
             android:hint="Proyecto seleccionado"
-            android:textSize="15sp"
+            android:textSize="15dp"
             android:layout_columnSpan="2"
             android:onClick="nombre_obra" />
 
@@ -98,26 +98,26 @@
             android:clickable="true"
             android:maxDate="Diciembre 31 de 2015" /> -->
 
-        <Spinner
-            android:layout_width="35dp"
-            android:layout_height="20dp"
+        <!--<Spinner
+            android:layout_width="50dp"
+            android:layout_height="25dp"
             android:id="@+id/dias"
             android:layout_row="5"
             android:layout_column="1"
-            android:spinnerMode="dropdown"
             android:entries="@id/dias"
-            android:clickable="true" />
+            android:clickable="true"
+            android:spinnerMode="dropdown" /> -->
 
-        <Spinner
+        <!--<Spinner
             android:layout_width="40dp"
             android:layout_height="20dp"
             android:id="@+id/mes"
             android:layout_row="5"
             android:layout_column="2"
             android:clickable="true"
-            android:spinnerMode="dropdown"
             android:nestedScrollingEnabled="false"
-            android:entries="@id/mes" />
+            android:entries="@id/mes"
+            android:spinnerMode="dropdown" /> -->
 
         <TextView
             android:layout_width="80dp"
@@ -155,10 +155,11 @@
         <Spinner
             android:layout_width="180dp"
             android:layout_height="30dp"
-            android:id="@+id/spinner"
+            android:id="@+id/mat"
             android:layout_row="8"
             android:layout_column="0"
-            android:entries="@array/Materiales" />
+            android:entries="@array/Materiales"
+            android:spinnerMode="dropdown" />
 
         <TextView
             android:layout_width="120dp"
@@ -172,12 +173,13 @@
             android:textSize="15dp" />
 
         <EditText
-            android:layout_width="30dp"
+            android:layout_width="40dp"
             android:layout_height="20dp"
             android:inputType="text"
             android:id="@+id/un_mat"
             android:layout_row="8"
-            android:layout_column="1" />
+            android:layout_column="1"
+            android:textSize="15dp" />
 
         <EditText
             android:layout_width="50dp"
@@ -185,7 +187,8 @@
             android:inputType="numberDecimal"
             android:id="@+id/cant_mat"
             android:layout_row="8"
-            android:layout_column="2" />
+            android:layout_column="2"
+            android:textSize="15dp" />
 
 
     </GridLayout>
