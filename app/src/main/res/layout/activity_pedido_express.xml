@@ -10,6 +10,7 @@
     android:background="@drawable/torre_electrica"
     android:baselineAligned="false">
 
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -38,7 +39,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Consecutivo:"
             android:id="@+id/textView_Conse"
-            android:layout_row="3"
+            android:layout_row="2"
             android:layout_column="0"
             android:textColor="#ff422f"
             android:textSize="15dp" />
@@ -47,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/consecutivo"
-            android:layout_row="3"
+            android:layout_row="2"
             android:layout_column="1"
             android:hint="0000"
             android:focusableInTouchMode="true"
@@ -60,16 +61,16 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Obra:"
             android:id="@+id/textView_obra"
-            android:layout_row="4"
+            android:layout_row="3"
             android:layout_column="0"
             android:textColor="#ff422f"
             android:textSize="15dp" />
 
         <EditText
             android:layout_width="200dp"
-            android:layout_height="50dp"
+            android:layout_height="20dp"
             android:id="@+id/Obra_p"
-            android:layout_row="4"
+            android:layout_row="3"
             android:layout_column="1"
             android:textColor="#ff371c"
             android:hint="Proyecto seleccionado"
@@ -83,19 +84,40 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Fecha Llegada:"
             android:id="@+id/text_fecha"
-            android:layout_row="7"
+            android:layout_row="5"
             android:layout_column="0"
             android:textColor="#ff3e25"
             android:textSize="15dp" />
 
-        <CalendarView
+        <!--<CalendarView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/calendarView"
             android:layout_row="7"
             android:layout_column="1"
             android:clickable="true"
-            android:maxDate="Diciembre 31 de 2015" />
+            android:maxDate="Diciembre 31 de 2015" /> -->
+
+        <Spinner
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:id="@+id/dias"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:spinnerMode="dropdown"
+            android:entries="@id/dias"
+            android:clickable="true" />
+
+        <Spinner
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:id="@+id/mes"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:clickable="true"
+            android:spinnerMode="dropdown"
+            android:nestedScrollingEnabled="false"
+            android:entries="@id/mes" />
 
         <TextView
             android:layout_width="80dp"
@@ -103,7 +125,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Material"
             android:id="@+id/text_Material"
-            android:layout_row="9"
+            android:layout_row="7"
             android:layout_column="0"
             android:textColor="#ff3c1f"
             android:textSize="15dp" />
@@ -114,7 +136,7 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="UN"
             android:id="@+id/text_uni"
-            android:layout_row="9"
+            android:layout_row="7"
             android:layout_column="1"
             android:textColor="#ff2d1d"
             android:textSize="15dp" />
@@ -125,7 +147,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Cant."
             android:id="@+id/textView"
-            android:layout_row="9"
+            android:layout_row="7"
             android:layout_column="2"
             android:textColor="#ff471f"
             android:textSize="15dp" />
@@ -134,17 +156,16 @@
             android:layout_width="180dp"
             android:layout_height="30dp"
             android:id="@+id/spinner"
-            android:layout_row="10"
+            android:layout_row="8"
             android:layout_column="0"
-            android:entries="@array/Materiales"
-            android:spinnerMode="dialog" />
+            android:entries="@array/Materiales" />
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="20dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/fecha"
-            android:layout_row="3"
+            android:layout_row="2"
             android:layout_column="3"
             android:hint="Fecha"
             android:textColor="#ff533c"
@@ -155,7 +176,7 @@
             android:layout_height="20dp"
             android:inputType="text"
             android:id="@+id/un_mat"
-            android:layout_row="10"
+            android:layout_row="8"
             android:layout_column="1" />
 
         <EditText
@@ -163,7 +184,7 @@
             android:layout_height="20dp"
             android:inputType="numberDecimal"
             android:id="@+id/cant_mat"
-            android:layout_row="10"
+            android:layout_row="8"
             android:layout_column="2" />
 
 

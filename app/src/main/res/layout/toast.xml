@@ -17,6 +17,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:textColor="#F00f81"
+        android:textColor="#F00006"
         android:paddingLeft="10dip" />
 </LinearLayout>
