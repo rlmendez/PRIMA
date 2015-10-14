@@ -20,6 +20,8 @@ public class pedido_express extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pedido_express);
 
+        nombre_obra(null);
+
         //Definimos el objeto texto a partir de el elemento con id caja_de_texto
         TextView texto = (TextView)findViewById(R.id.fecha);
 
