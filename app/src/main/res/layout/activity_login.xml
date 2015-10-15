@@ -9,7 +9,7 @@
     android:padding="2dp">
 
     <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
-        android:layout_height="232dp"
+        android:layout_height="wrap_content"
         android:fillViewport="false"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0">
