@@ -7,7 +7,7 @@ import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
 
-class ListView_Pedido extends ListActivity {
+public class lista_pedidos extends ListActivity {
     //LIST OF ARRAY STRINGS WHICH WILL SERVE AS LIST ITEMS
     ArrayList<String> listItems=new ArrayList<String>();
 
