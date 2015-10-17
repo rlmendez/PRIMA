@@ -59,7 +59,8 @@
             android:hint="0000"
             android:focusableInTouchMode="true"
             android:textColor="#ff422c"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:padding="1dp" />
 
         <TextView
             android:layout_width="60dp"
@@ -80,9 +81,10 @@
             android:layout_column="1"
             android:textColor="#ff371c"
             android:hint="Proyecto seleccionado"
-            android:textSize="15dp"
+            android:textSize="10dp"
             android:layout_columnSpan="2"
-            android:onClick="nombre_obra" />
+            android:onClick="nombre_obra"
+            android:padding="1dp" />
 
         <TextView
             android:layout_width="80dp"
@@ -145,7 +147,8 @@
             android:layout_row="7"
             android:layout_column="1"
             android:textColor="#ff2d1d"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:padding="1dp" />
 
         <TextView
             android:layout_width="60dp"
@@ -156,7 +159,8 @@
             android:layout_row="7"
             android:layout_column="2"
             android:textColor="#ff471f"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:padding="1dp" />
 
         <Spinner
             android:layout_width="180dp"
@@ -165,7 +169,8 @@
             android:layout_row="8"
             android:layout_column="0"
             android:entries="@array/Materiales"
-            android:spinnerMode="dropdown" />
+            android:spinnerMode="dropdown"
+            android:padding="1dp" />
 
         <TextView
             android:layout_width="120dp"
@@ -176,7 +181,8 @@
             android:layout_column="3"
             android:hint="Fecha"
             android:textColor="#ff533c"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:padding="1dp" />
 
         <EditText
             android:layout_width="40dp"
@@ -185,7 +191,8 @@
             android:id="@+id/un_mat"
             android:layout_row="8"
             android:layout_column="1"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:padding="1dp" />
 
         <EditText
             android:layout_width="50dp"
@@ -194,7 +201,8 @@
             android:id="@+id/cant_mat"
             android:layout_row="8"
             android:layout_column="2"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:padding="1dp" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -224,7 +232,8 @@
                 android:id="@+id/listview_materiales"
                 android:drawSelectorOnTop="false"
                 android:layout_row="11"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:padding="1dp" />
 
 
         </GridLayout>
