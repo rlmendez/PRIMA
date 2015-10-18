@@ -40,9 +40,9 @@ public class pedido_express extends AppCompatActivity {
         texto.setText("Fecha: " + fecha.getDate() + "-" + fecha.getMonth() + "-" + fecha.getYear());
 
         adapter=new ArrayAdapter<String>(this,
-                android.R.layout.activity_list_item,
+                android.R.layout.simple_list_item_activated_1,
                 Materiales);
-        ListView lm = (ListView) findViewById(R.id.listview_materiales);
+        ListView lm = (ListView)findViewById(R.id.listview_materiales);
         lm.setAdapter(adapter);
     }
 
