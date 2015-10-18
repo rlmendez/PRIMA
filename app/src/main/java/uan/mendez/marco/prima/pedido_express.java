@@ -6,14 +6,26 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.text.DateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
 public class pedido_express extends AppCompatActivity {
 
+    //LIST OF ARRAY STRINGS WHICH WILL SERVE AS LIST ITEMS
+    ArrayList<String> Materiales=new ArrayList<String>();
+
+    //DEFINING A STRING ADAPTER WHICH WILL HANDLE THE DATA OF THE LISTVIEW
+    ArrayAdapter<String> adapter;
+
+    //RECORDING HOW MANY TIMES THE BUTTON HAS BEEN CLICKED
+    //int clickCounter=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +40,13 @@ public class pedido_express extends AppCompatActivity {
         Date fecha = new java.util.Date(); //manejador de fechas
 
         //Cambiamos el texto
-        texto.setText("Fecha: "+ fecha.getDate()+"-"+fecha.getMonth()+"-"+fecha.getYear());
+        texto.setText("Fecha: " + fecha.getDate() + "-" + fecha.getMonth() + "-" + fecha.getYear());
+
+        adapter=new ArrayAdapter<String>(this,
+                android.R.layout.activity_list_item,
+                Materiales);
+        ListView lm = (ListView) findViewById(R.id.listview_materiales);
+        lm.setAdapter(adapter);
     }
 
     @Override
@@ -64,5 +82,17 @@ public class pedido_express extends AppCompatActivity {
 
     }
 
+    //METHOD WHICH WILL HANDLE DYNAMIC INSERTION
+    public void addItem(View v) {
+
+        Spinner mat = (Spinner)findViewById(R.id.mat);
+        String m = mat.getSelectedItem().toString();
+
+        Materiales.add(m);
+        adapter.notifyDataSetChanged();
+    }
+
 
 }
+
+
