@@ -24,9 +24,6 @@ public class pedido_express extends AppCompatActivity {
     //DEFINING A STRING ADAPTER WHICH WILL HANDLE THE DATA OF THE LISTVIEW
     ArrayAdapter<String> adapter;
 
-    //RECORDING HOW MANY TIMES THE BUTTON HAS BEEN CLICKED
-    //int clickCounter=0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
